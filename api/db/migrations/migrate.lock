@@ -1,3 +1,5 @@
 # Prisma Migrate lockfile v1
 
 20210127030844-create-posts
+20210128015157-migration
+20210128024059-create-contact
