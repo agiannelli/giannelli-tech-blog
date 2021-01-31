@@ -7,6 +7,9 @@ const BlogPostPage = ({ id }) => {
     <>
       <BlogLayout>
         <BlogPostCell id={id} />
+        <p>
+          <Link to={routes.home()}>&gt; go home</Link>
+        </p>
       </BlogLayout>
     </>
   )

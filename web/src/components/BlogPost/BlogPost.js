@@ -1,4 +1,5 @@
 import { Link, routes } from '@redwoodjs/router'
+import Moment from 'moment'
 
 const BlogPost = ({ post }) => {
   return (
@@ -9,7 +10,7 @@ const BlogPost = ({ post }) => {
         </h2>
       </header>
       <p>{post.body}</p>
-      <div>Posted at: {post.createdAt}</div>
+      <div>Posted at: {Moment(Date(post.createdAt)).format('MM-DD-YYYY')}</div>
     </article>
   )
 }
