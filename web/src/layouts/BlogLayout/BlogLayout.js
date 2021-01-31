@@ -1,5 +1,6 @@
 import { Link, routes } from '@redwoodjs/router'
 import { useAuth } from '@redwoodjs/auth'
+import { Button } from '@material-ui/core'
 import banner from '../../img/giannelli-tech-banner-transparent-png.png'
 
 const BlogLayout = ({ children }) => {
@@ -32,9 +33,9 @@ const BlogLayout = ({ children }) => {
               </li>
             )}
             <li>
-              <button onClick={isAuthenticated ? logOut : logIn}>
+              <Button onClick={isAuthenticated ? logOut : logIn}>
                 {isAuthenticated ? 'Log Out' : 'Log In'}
-              </button>
+              </Button>
             </li>
           </ul>
         </nav>

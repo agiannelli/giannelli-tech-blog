@@ -7,6 +7,7 @@ import FatalErrorPage from 'src/pages/FatalErrorPage'
 import Routes from 'src/Routes'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'fontsource-roboto'
 import './scaffold.css'
 import './index.css'
 
