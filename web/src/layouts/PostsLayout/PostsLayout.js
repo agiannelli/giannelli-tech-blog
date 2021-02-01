@@ -16,6 +16,9 @@ const PostsLayout = (props) => {
         </Link>
       </header>
       <main className="rw-main">{props.children}</main>
+      <footer>
+        <Link to={routes.home()}>{'< go home'}</Link>
+      </footer>
     </div>
   )
 }

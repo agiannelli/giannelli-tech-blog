@@ -48,6 +48,10 @@ export default () => (
       <h1>
         <span>Something went wrong</span>
       </h1>
+      <p>
+        If you see this message, please contact{' '}
+        <a href="mailto:giannelli.tech@gmail.com">giannelli.tech@gmail.com</a>
+      </p>
     </section>
   </main>
 )

@@ -10,7 +10,7 @@ const BlogPost = ({ post }) => {
         </h2>
       </header>
       <p>{post.body}</p>
-      <div>Posted at: {Moment(Date(post.createdAt)).format('MM-DD-YYYY')}</div>
+      <div>Posted at: {Moment(new Date(post.createdAt)).format('ll')}</div>
     </article>
   )
 }
