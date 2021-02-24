@@ -1,4 +1,5 @@
 {
+  "name": "giannelli.tech",
   "private": true,
   "workspaces": {
     "packages": [

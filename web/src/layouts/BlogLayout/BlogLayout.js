@@ -1,13 +1,19 @@
 import { Link, routes } from '@redwoodjs/router'
 import { useAuth } from '@redwoodjs/auth'
 import { Button } from '@material-ui/core'
-import banner from '../../img/giannelli-tech-banner-transparent-png.png'
+import Helmet from 'react-helmet'
+
+import banner from 'src/img/giannelli-tech-banner-transparent-png.png'
 
 const BlogLayout = ({ children }) => {
   const { logIn, logOut, isAuthenticated, currentUser } = useAuth()
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>giannelli.tech 👩‍💻</title>
+      </Helmet>
       <header>
         <Link to={routes.home()}>
           <img
